@@ -1,0 +1,20 @@
+.taskList {
+    background: $card-bg-color;
+    width: 272px;
+    border-radius: 3px;
+    &__status-title {
+        font-weight: 600;
+        line-height: 40px;
+        padding: 0 12px;
+        text-transform: capitalize;
+    }
+    &__task-wrapper {
+        padding: 0 4px;
+    }
+    &__empty-list {
+        padding: 10px 8px;
+        font-weight: 600;
+        color: darken($color: $card-bg-color, $amount: 40);
+        text-transform: capitalize;
+    }
+}

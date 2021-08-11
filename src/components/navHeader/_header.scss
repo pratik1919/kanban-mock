@@ -1,0 +1,46 @@
+.header {
+    &__top {
+        background: $primary-color;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5px;
+    }
+    &__menu {
+        list-style: none;
+        li {
+            display: inline-block;
+            margin-right: 4px;
+            padding: 8px;
+            &:hover {
+                background-color: $btn-primary-color;
+                cursor: pointer;
+            }
+            a {
+                color: $white;
+                text-decoration: none;
+                font-size: 1em;
+                font-weight: 700;
+            }
+        }
+    }
+    &__logo {
+        height: 16px;
+        width: 80px;
+        background-image: url(https://a.trellocdn.com/prgb/dist/images/header-logo-spirit-loading.87e1af770a49ce8e84e3.gif);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    &__notification {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 4px;
+        font-size: 1em;
+        background: $header-info-bg-color;
+        padding: 6px;
+        font-weight: 700;
+    }
+}

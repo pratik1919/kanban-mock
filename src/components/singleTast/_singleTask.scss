@@ -1,0 +1,76 @@
+@mixin dafaultTags {
+    min-width: 40px;
+    display: inline-block;
+    min-height: 8px;
+    color: $white;
+    padding: 2px 8px;
+    border-radius: 4px;
+    margin-bottom: 4px;
+    .text {
+        text-transform: capitalize;
+        font-size: 12px;
+        font-weight: 700;
+    }
+}
+
+.task {
+    background: $list-bg-color;
+    padding: 6px 8px;
+    margin-left: 4px;
+    margin-right: 4px;
+    margin-bottom: 8px;
+    border-radius: 3px;
+    box-shadow: 0 1px 0 rgb(9 30 66 / 25%);
+    cursor: pointer;
+    
+    &:hover {
+        background: darken($color: $list-bg-color, $amount: 3);
+    }
+
+    &__tag {
+        &--fault {
+            @include dafaultTags;
+            background: $fault-color;
+        }
+
+        &--cp {
+            @include dafaultTags;
+            background: $cp-color;
+        }
+
+        &--big {
+            .text {
+                text-transform: uppercase;
+                line-height: 28px;
+                font-size: 14px;
+            }
+        }
+    }
+
+    &__title {
+        margin-bottom: 4px;
+        &--view {
+            flex: 1;
+        }
+    }
+
+    &__engagements-icons {
+        span {
+            display: inline-block;
+            margin: 6px 8px 2px 0;
+            padding: 2px;
+            font-size: 11px;
+
+            svg {
+                margin-right: 4px;
+                path {
+                    fill: none;
+                    stroke:darken($color: $card-bg-color, $amount: 50);
+                    stroke-width: 30px;
+                }
+            }
+        }
+    }
+
+    
+}

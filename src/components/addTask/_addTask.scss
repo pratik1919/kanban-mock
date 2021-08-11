@@ -1,0 +1,42 @@
+@mixin common-input-style {
+    height: 32px;
+    padding: 4px 8px;
+    background-color: #eaecf0;
+    border: none;
+    width: 100%;
+}
+
+.add-task {
+    &__header {
+        padding: 15px 30px;
+    }
+    &__form {
+        padding: 15px 30px;
+    }
+    &__form-group {
+        margin: 15px 0;
+        label {
+            display: block;
+            margin-bottom: 4px;
+        }
+        input {
+            @include common-input-style();
+        }
+        select {
+            @include common-input-style();
+        }
+        textarea {
+            @include common-input-style();
+            height: 100px;
+            resize: none;
+        }
+    }
+    &__form-btn-wrapper {
+        text-align: right;
+        button {
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+}

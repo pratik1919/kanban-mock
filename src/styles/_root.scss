@@ -1,0 +1,15 @@
+html {
+  font-size: $primary-font-size;
+  font-family: $font-family;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background: $primary-color;
+}
