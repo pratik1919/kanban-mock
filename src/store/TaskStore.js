@@ -58,7 +58,7 @@ dispatcher.register((action) => {
             break;
         case actionTypes.SEARCH_TASK:
             const { query } = action;
-            _task = _task.filter((task) => task?.title.includes(query));
+            _task = _task.filter((task) => task?.title?.toLowerCase().includes(query?.toLowerCase()));
             taskStore.emitChange();
             break;
         default:
