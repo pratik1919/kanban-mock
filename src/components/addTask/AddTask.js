@@ -46,7 +46,7 @@ export const AddTask = (props) => {
                     <textarea type="text" name='description' onChange={handleValueChange} value={formValue.description} required />
                 </div>
                 <div className='add-task__form-btn-wrapper'>
-                    <button className='btn__secondary' onClick={() => props.openModal({ displayModal: false })}>Cancle</button>
+                    <button className='btn__secondary' onClick={() => props.openModal({ displayModal: false })}>Cancel</button>
                     <button className='btn__primary' type='submit'>Add</button>
                 </div>
             </form>
