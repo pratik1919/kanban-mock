@@ -14,7 +14,7 @@ export const NavHeader = () => {
                             <a href="http://localhost:3000/">Blog</a>
                         </li>
                     </ul>
-                    <div className='header__logo'>
+                    <div className='header__logo' data-hj-hide>
                     </div>
                     <div>
                         <button className='btn__secondary'>Sign up</button>

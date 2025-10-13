@@ -23,11 +23,11 @@ export const AddTask = (props) => {
             <form className='add-task__form' onSubmit={submitAddForm}>
                 <div className='add-task__form-group'>
                     <label htmlFor="title">Title</label>
-                    <input name='title' type="text" required onChange={handleValueChange} value={formValue.title} />
+                    <input name='title' type="text" required onChange={handleValueChange} value={formValue.title}  data-hj-mask/>
                 </div>
                 <div className='add-task__form-group'>
                     <label htmlFor="status">Label</label>
-                    <select name='status' onChange={handleValueChange} value={formValue.status} required>
+                    <select name='status' onChange={handleValueChange} value={formValue.status} required  data-hj-suppress>
                         <option value="todo">To Do</option>
                         <option value="development">Development</option>
                         <option value="testing">Testing</option>
@@ -36,14 +36,14 @@ export const AddTask = (props) => {
                 </div>
                 <div className='add-task__form-group'>
                     <label htmlFor="label">Tag</label>
-                    <select name='label' onChange={handleValueChange} value={formValue.label} required>
+                    <select name='label' onChange={handleValueChange} value={formValue.label} required  data-hj-hide>
                         <option value={GLOBAL_CONSTANTS.LABEL.CP}>CP</option>
                         <option value={GLOBAL_CONSTANTS.LABEL.FAULT}>Fault</option>
                     </select>
                 </div>
                 <div className='add-task__form-group'>
                     <label htmlFor="description">Description</label>
-                    <textarea type="text" name='description' onChange={handleValueChange} value={formValue.description} required />
+                    <textarea type="text" name='description' onChange={handleValueChange} value={formValue.description} required  data-hj-mask />
                 </div>
                 <div className='add-task__form-btn-wrapper'>
                     <button className='btn__secondary' onClick={() => props.openModal({ displayModal: false })}>Cancel</button>
