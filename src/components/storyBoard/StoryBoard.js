@@ -37,7 +37,7 @@ export const StoryBoard = () => {
                 <div className='story-board__header'>
                     <ul className='story-board__header-details'>
                         <li>
-                            <h1 className="story-board__page-title">Kanban Board</h1>
+                            <h1 className="story-board__page-title" data-hj-mask >Kanban Board</h1>
                         </li>
                         <li onClick={() => openModal({ displayModal: true, purpose: GLOBAL_CONSTANTS.MODAL_ACTIONS.ADD })}>
                             <button className='btn__primary'>
@@ -46,7 +46,7 @@ export const StoryBoard = () => {
                             </button>
                         </li>
                         <li>
-                            <button className='btn__tag'>AH</button>
+                            <button className='btn__tag' data-hj-mask >AH</button>
                         </li>
                     </ul>
                     <div>

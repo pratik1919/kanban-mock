@@ -11,10 +11,10 @@ export const SingleTask = (props) => {
     return (
         <div className='task' key={id} onClick={() => props.openModal({ displayModal: true, purpose: GLOBAL_CONSTANTS.MODAL_ACTIONS.VIEW, task: props.task})}>
             <span className={tagClassName}>
-                <span className='text'>{label}</span>
+                <span className='text' data-hj-supress>{label}</span>
             </span>
-            <p>{title}</p>
-            <div className='task__engagements-icons'>
+            <p data-hj-suppress>{title}</p>
+            <div className='task__engagements-icons' data-hj-suppress>
                 {comment?.length > 0 && <span>
                     <FontAwesomeIcon icon={faComment} /> {comment?.length}
                 </span>}

@@ -4,7 +4,7 @@ import { StoryBoard } from './components/storyBoard/StoryBoard';
 
 function App() {
   return (
-    <div className="App">
+    <div className="App" data-hj-suppress>
       <NavHeader />
       <StoryBoard />
     </div>

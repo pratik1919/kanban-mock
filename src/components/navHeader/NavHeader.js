@@ -2,7 +2,7 @@ export const NavHeader = () => {
     return (
         <>
             <div className='header__wrapper'>
-                <div className='header__top'>
+                <div className='header__top' data-hj-hide>
                     <ul className='header__menu'>
                         <li>
                             <a href="http://localhost:3000/">Home</a>

@@ -18,10 +18,10 @@ export const ViewTask = (props) => {
                 </div>
                 <div className='task__view-title'>
                     <div>
-                        <h2>{title}</h2>
-                        <p>In list {status}</p>
+                        <h2 data-hj-suppress>{title}</h2>
+                        <p data-hj-suppress>In list {status}</p>
                     </div>
-                    <div className='task__status-wrapper'>
+                    <div className='task__status-wrapper' data-hj-suppress>
                         <div className='task__label'>
                             <p>LABEL</p>
                             <span className={tagClassName}>
