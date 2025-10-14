@@ -12,9 +12,10 @@ export const SearchTask = () => {
     return (
         <form onSubmit={handleSearchSubmit}>
             <div className='search__wrapper'>
-                <FontAwesomeIcon className='btn__icon--left search-icon' icon={faSearch} />
+                <FontAwesomeIcon className='btn__icon--left search-icon' icon={faSearch} data-hj-suppress />
                 <input className='' type="text" value={searchValue} onChange={(e) => setSearchValue(e.target.value)} placeholder='Search by task title' data-hj-mask />
             </div>
+            <FontAwesomeIcon className='btn__icon--left search-icon' icon={faSearch} />
         </form>
     );
 }
