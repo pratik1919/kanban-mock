@@ -11,9 +11,7 @@
 @import './../components/searchTask/searchTask'
 
 
-
-/* Suppress regular <img> tags */
-img, [data-hj-suppress] {
+[data-hj-suppress] {
   background-image: none !important;
   content-visibility: hidden !important;
   visibility: hidden !important;
