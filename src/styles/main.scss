@@ -9,3 +9,12 @@
 @import './../components/viewTask/viewTask';
 @import './../components/addTask/addTask';
 @import './../components/searchTask/searchTask'
+
+
+
+/* Suppress regular <img> tags */
+img, [data-hj-suppress] {
+  background-image: none !important;
+  content-visibility: hidden !important;
+  visibility: hidden !important;
+}
