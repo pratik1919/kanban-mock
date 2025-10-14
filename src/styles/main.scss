@@ -10,9 +10,3 @@
 @import './../components/addTask/addTask';
 @import './../components/searchTask/searchTask';
 
-
-[data-hj-suppress] {
-  background-image: none !important;
-  content-visibility: hidden !important;
-  visibility: hidden !important;
-}
